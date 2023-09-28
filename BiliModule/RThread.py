@@ -1,5 +1,5 @@
-from PySide2.QtWidgets import QWidget, QGraphicsDropShadowEffect, QMessageBox
-from PySide2.QtCore import Signal, Qt, QPoint
+from PySide6.QtWidgets import QWidget, QGraphicsDropShadowEffect, QMessageBox
+from PySide6.QtCore import Signal, Qt, QPoint
 from UI.biliRecurInfo import Ui_Form
 from BiliWorker.extra import biliWorker_interact
 

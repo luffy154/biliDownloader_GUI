@@ -1,6 +1,6 @@
 import webbrowser
-from PySide2.QtWidgets import QWidget, QGraphicsDropShadowEffect
-from PySide2.QtCore import Qt, QPoint, Signal
+from PySide6.QtWidgets import QWidget, QGraphicsDropShadowEffect
+from PySide6.QtCore import Qt, QPoint, Signal
 from UI.bilidsetting import Ui_Form
 from BiliWorker.extra import checkProxy
 

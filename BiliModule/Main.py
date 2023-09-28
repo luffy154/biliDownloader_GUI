@@ -5,9 +5,9 @@ from BiliModule.Interact import biliInteractMainWindow
 
 from BiliWorker.main import biliWorker
 from BiliWorker.extra import *
-from PySide2.QtWidgets import QApplication, QMainWindow, QGraphicsDropShadowEffect, QCheckBox, QListWidgetItem, \
+from PySide6.QtWidgets import QApplication, QMainWindow, QGraphicsDropShadowEffect, QCheckBox, QListWidgetItem, \
     QFileDialog
-from PySide2.QtCore import Qt, QPoint, QTimer
+from PySide6.QtCore import Qt, QPoint, QTimer
 from UI.biliDownloader import Ui_MainWindow
 
 

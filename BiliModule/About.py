@@ -1,7 +1,7 @@
 import webbrowser
 from etc import *
-from PySide2.QtWidgets import QWidget, QGraphicsDropShadowEffect
-from PySide2.QtCore import Qt, QPoint
+from PySide6.QtWidgets import QWidget, QGraphicsDropShadowEffect
+from PySide6.QtCore import Qt, QPoint
 from UI.bilidabout import Ui_Form
 from BiliWorker.extra import CheckLatest
 

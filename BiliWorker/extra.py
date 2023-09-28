@@ -1,7 +1,7 @@
 import os
 import re, json, webbrowser
 from time import sleep
-from PySide2.QtCore import QThread, Signal
+from PySide6.QtCore import QThread, Signal
 from pathlib import Path
 # 共享VIP Cookie预留（不使用请注释）
 # import requests

@@ -1,10 +1,10 @@
 import os, sys
 import json, webbrowser
 from pathlib import Path
-from PySide2.QtCore import Signal, Qt, QPoint, QSize
-from PySide2.QtWidgets import QWidget, QGraphicsDropShadowEffect, QApplication, QTreeWidgetItem, QVBoxLayout, QCheckBox, \
+from PySide6.QtCore import Signal, Qt, QPoint, QSize
+from PySide6.QtWidgets import QWidget, QGraphicsDropShadowEffect, QApplication, QTreeWidgetItem, QVBoxLayout, QCheckBox, \
     QLabel, QListWidgetItem, QFileDialog, QMessageBox
-from PySide2.QtGui import QPixmap
+from PySide6.QtGui import QPixmap
 from pyecharts.charts import Tree
 from pyecharts import options as opts
 from pyecharts.globals import CurrentConfig

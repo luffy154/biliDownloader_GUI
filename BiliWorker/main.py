@@ -1,6 +1,6 @@
 import os, sys, re, json, subprocess
 from time import sleep
-from PySide2.QtCore import QThread, Signal
+from PySide6.QtCore import QThread, Signal
 
 # 共享VIP Cookie预留（不使用请注释）
 # import requests
@@ -532,6 +532,7 @@ class biliWorker(QThread):
             self.business_info.emit("文件：{}\n已存在。".format(output_add))
             return -1
         ffcommand = ""
+        print(self.systemd)
         if self.systemd == "win32":
             ffpath = os.path.dirname(os.path.realpath(sys.argv[0]))
             ffcommand = '"' + ffpath + '\\ffmpeg.exe" -i "' + \
@@ -540,8 +541,7 @@ class biliWorker(QThread):
         elif self.systemd == "linux":
             ffcommand = 'ffmpeg -i "' + input_v + '" -i "' + input_a + '" -strict unofficial -strict -2 -brand mp42 -c copy -y "' + output_add + '"'
         elif self.systemd == "darwin":
-            ffpath = os.path.dirname(os.path.realpath(sys.argv[0]))
-            ffcommand = '"' + ffpath + '/ffmpeg" -i "' + \
+            ffcommand = 'ffmpeg -i "' + \
                         input_v + '" -i "' + \
                         input_a + '" -strict unofficial -strict -2 -brand mp42 -c copy -y "' + output_add + '"'
         else:
@@ -553,7 +553,9 @@ class biliWorker(QThread):
         # self.business_info.emit('--------------------内测分割线--------------------')
         try:
             self.subpON = True
-            temp = self.subp_GUIFollow(ffcommand)
+            print(ffcommand)
+            #temp = self.subp_GUIFollow(ffcommand)
+            temp = True
             if temp:
                 raise Exception(temp)
             self.subpON = False

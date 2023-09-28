@@ -8,9 +8,9 @@
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
 
-from PySide2.QtCore import *
-from PySide2.QtGui import *
-from PySide2.QtWidgets import *
+from PySide6.QtCore import *
+from PySide6.QtGui import *
+from PySide6.QtWidgets import *
 
 from UI import images_dl_rc
 
@@ -236,7 +236,7 @@ class Ui_Form(object):
         font.setFamily(u"\u5fae\u8f6f\u96c5\u9ed1")
         font.setBold(False)
         font.setItalic(False)
-        font.setWeight(50)
+        font.setWeight(QFont.Normal)
         self.label.setFont(font)
         self.label.setStyleSheet(u"*{\n"
 "	font: 18px \"\u5fae\u8f6f\u96c5\u9ed1\";\n"
